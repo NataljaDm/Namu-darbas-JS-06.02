@@ -1,4 +1,3 @@
-const { log } = require("console");
 
 /*
 1. Sukurti du kintamuosius. 
@@ -16,8 +15,14 @@ Atspausdinti trumpesnį stringą.*/
 2.Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). 
 Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
 "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".*/
-	
-	
+	function metai (a, b) {
+        return a - b
+    }
+	const vardas = "Natalja";
+    const pavarde = "Dmitrijeva";
+    const amzius = metai ("2023","1888");
+    const sakinys = "Aš esu " + vardas + " " + pavarde + ". Man yra " + amzius + " metai(ų)."
+    console.log(sakinys )
 	
 /*
 3.Sukurti du kintamuosius. 
