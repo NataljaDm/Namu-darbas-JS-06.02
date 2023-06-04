@@ -4,6 +4,8 @@
 Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). 
 Atspausdinti trumpesnį stringą.*/
 
+const { Console } = require("console");
+
 	function initialai(vardas, pavarde) {
         return vardas + "." + pavarde
     }
@@ -15,14 +17,11 @@ Atspausdinti trumpesnį stringą.*/
 2.Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). 
 Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
 "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".*/
-	function metai (a, b) {
-        return a - b
+	function metai (vardas,pavarde, a, b) {
+        return `Aš esu ${vardas}  ${pavarde} . Man yra ${a-b} metai(ų).`
     }
-	const vardas = "Natalja";
-    const pavarde = "Dmitrijeva";
-    const amzius = metai ("2023","1888");
-    const sakinys = "Aš esu " + vardas + " " + pavarde + ". Man yra " + amzius + " metai(ų)."
-    console.log(sakinys )
+	const sakinis = metai (`Natalja`, `Dmitrijeva`, `2023`, `1888`);
+    console.log(sakinis)
 	
 /*
 3.Sukurti du kintamuosius. 
@@ -30,7 +29,10 @@ Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus.
 Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. 
 Jį atspausdinti.*/
 	
-	
+      
+	const aktorvardas = "Bruce";
+    const aktorpavarde = "Willis";
+    console.log(aktorvardas[aktorvardas.length - 3] + aktorvardas[aktorvardas.length - 2] + aktorvardas[aktorvardas.length - 1] + " " + aktorpavarde[aktorpavarde.length - 3] + aktorpavarde[aktorpavarde.length - 2] + aktorpavarde[aktorpavarde.length - 1]);
 	
 /*
 4.Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. 
