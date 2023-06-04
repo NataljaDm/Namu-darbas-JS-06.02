@@ -39,7 +39,10 @@ Jį atspausdinti.*/
 Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
 Rezultatą atspausdinti.*/
 	
-	
+	const section = `Once upon a time in hollywood`;
+    const sectionNew = section.replace ("O","*");
+    console.log(sectionNew);
+
 	
 /*
 5.Sukurkite keturis kintamuosius kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2. 
