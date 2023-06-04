@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "js-homework": "nodemon ./js/js-homework.js",
-    "friday-homework": "nodemon  .js.friday-homework.js",
+    "friday-homework": "nodemon ./js/friday-homework.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
