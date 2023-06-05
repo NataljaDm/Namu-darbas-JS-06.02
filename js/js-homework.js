@@ -1,3 +1,7 @@
+/*Kintamųjų inicijavimas*/
+
+const { Console } = require("console");
+
 /*
 1.Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
 Po kiekvieno jų inicijavimo, išvesti į console*/
@@ -35,3 +39,36 @@ const element6 = [`sausis`,`vasaris`,`kovas`,`balandis`,`geguze`];
 console.log(element4);
 console.log(element5);
 console.log(element6);
+
+/*Veiksmai su kintamaisiais*/
+
+/*1.Susumuoti visus skaičiaus tipo kintamuosius
+Rezultatą išvesti į console*/
+const sumax = a+b+c
+console.log(sumax)
+
+/*2.Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
+Rezultatą išvesti į console*/
+const tekstas = `${element1} ${element2} ${element3}`;
+console.log(tekstas);
+
+/*3.Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
+1-2+3-4+5
+Rezultatą išvesti į console*/
+
+const pazimiai = [1, 2, 3, 4, 5 ];
+const s1 = suma(pazimiai);
+function suma(masyvas) {
+    return masyvas[0] - masyvas[1] + masyvas[2] - masyvas[3] + masyvas[4]
+    
+}
+console.log(s1);
+
+/*4.Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas*/
+
+const menesiai = [`sausis`,`vasaris`,`kovas`,`balandis`,`geguze`];
+const s2 = menesiuSuma(menesiai);
+function menesiuSuma(masyvas) {
+    return `${menesiai[4]},${menesiai[3]},${menesiai[2]},${menesiai[1]},${menesiai[0]}`
+}
+console.log(s2);
