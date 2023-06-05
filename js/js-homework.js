@@ -19,8 +19,19 @@ console.log(element3);
 
 /*3.Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis
 Po kiekvieno jų inicijavimo, išvesti į console*/
-
+const number = [1,2,3,4,5]; 
+const number2 = [3,21,32,65,54]; 
+const number3 = [6,56,89,74,85,96];
+console.log(number);
+console.log(number2);
+console.log(number3);
 
 /*4.Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
 Po kiekvieno jų inicijavimo, išvesti į console
 */
+const element4 = [`kompiuteris`,`telefonas`,`televizorius`,`automobilis`,`autobusas`]; 
+const element5 = [`kede, stalas, sofa, langas, durys`]; 
+const element6 = [`sausis`,`vasaris`,`kovas`,`balandis`,`geguze`]; 
+console.log(element4);
+console.log(element5);
+console.log(element6);
