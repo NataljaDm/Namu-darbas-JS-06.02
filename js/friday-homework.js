@@ -40,7 +40,7 @@ Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.
 Rezultatą atspausdinti.*/
 	
 	const section = `Once upon a time in hollywood`;
-    const sectionNew = section.replace ("O","*");
+    const sectionNew = section.replaceAll ("o","*");
     console.log(sectionNew);
 
 	
