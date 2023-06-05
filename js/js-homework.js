@@ -72,3 +72,43 @@ function menesiuSuma(masyvas) {
     return `${menesiai[4]},${menesiai[3]},${menesiai[2]},${menesiai[1]},${menesiai[0]}`
 }
 console.log(s2);
+
+
+/*Funkcijos*/
+
+/*Funkcija pavadinimu “tusciaFunkcija”:
+nepriima jokių kintamųjų
+neatlieka jokios vidinės logikos
+gražina boolean tipo reikšmę “false”
+TESTAS:
+console.log( tusciaFunkcija() );
+rezultatas: false*/
+function empty() {
+}
+console.log(empty())
+function empty2() {
+    return false
+}
+console.log(empty2())
+
+/*Funkcija pavadinimu “daugyba”:
+priima du skaičiaus tipo kintamuosius
+atskirame kintamajame įsimena sandaugos reikšmę
+gražina saudaugos rezultatą
+TESTAI:
+console.log( daugyba( skaicius1, skaicius2 ) );
+console.log( daugyba( skaicius3, skaicius2 ) );
+console.log( daugyba( skaicius1, skaicius3 ) );
+rezultatas: teisingos reikšmės;*/
+
+const skaicius1 = 5;
+const skaicius2 = 9;
+const skaicius3 = 7;
+
+function daugyba(pirmasSkaicius, antrasSkaicius) {
+    return pirmasSkaicius * antrasSkaicius
+}
+
+console.log( daugyba( skaicius1, skaicius2 ) );
+console.log( daugyba( skaicius3, skaicius2 ) );
+console.log( daugyba( skaicius1, skaicius3 ) );
