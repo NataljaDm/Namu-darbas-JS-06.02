@@ -8,7 +8,7 @@
 -50 … 50
 -70 … 30*/
 
-let sum =0
+/*let sum =0
 for (let i = 0; i < 0; i++) {
     sum += i
     console.log(sum);
@@ -45,12 +45,20 @@ for (let i = -70; i <= 30; i++) {
     sum += i
     console.log(sum);
 }
-console.log(sum);
+console.log(sum);*/
 
 
 /*2.panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
 pvz.: “abcdef” -> “fedcba”*/
 
+const tekstas = [`a`,`b`,`c`,`d`,`e`,`f`];
+let raidesPvz = 0;
+
+for (let i = tekstas.length; i >= 0; i-=1) {
+    const raidesPvz = tekstas[i];
+    console.log(raidesPvz)
+}
+console.log(raidesPvz);
 
 /*3.Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 0 - 11
