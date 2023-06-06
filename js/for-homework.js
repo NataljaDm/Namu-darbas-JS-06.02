@@ -52,13 +52,10 @@ console.log(sum);*/
 pvz.: “abcdef” -> “fedcba”*/
 
 const tekstas = [`a`,`b`,`c`,`d`,`e`,`f`];
-let raidesPvz = 0;
 
-for (let i = tekstas.length; i >= 0; i-=1) {
-    const raidesPvz = tekstas[i];
-    console.log(raidesPvz)
+for (let i = tekstas.length-1; i >=0; i--) {
+    console.log(tekstas[i])
 }
-console.log(raidesPvz);
 
 /*3.Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
 0 - 11
@@ -68,3 +65,20 @@ rezultatą pateikti tokiu formatu:
 Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
 Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
 Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.*/
+
+/*
+4. // Kiek duotas masyvas turi ieskomo skaiciaus atveju (kiekio)?
+// m1:1 -> 3
+// m1:2 -> 0
+// m1:3 -> 0
+// m2:1 -> 1
+// m2:2 -> 2
+// m2:3 -> 1
+// m4:1 -> 5
+// m4:2 -> 3
+// m4:3 -> 2
+
+const masyvas1 = [1, 1, 1];
+const masyvas2 = [1, 2, 2, 3];
+const masyvas3 = [5, 4, 3, 2, 1];
+const masyvas4 = [5, 4, 3, 2, 1, 1, 1, 1, 1, 2, 2, 3];*/
