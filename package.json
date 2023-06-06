@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for": "nodemon ./js/for-homework.js",
     "js-homework": "nodemon ./js/js-homework.js",
     "friday-homework": "nodemon ./js/friday-homework.js",
     "dev": "nodemon",

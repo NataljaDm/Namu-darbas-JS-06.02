@@ -112,3 +112,55 @@ function daugyba(pirmasSkaicius, antrasSkaicius) {
 console.log( daugyba( skaicius1, skaicius2 ) );
 console.log( daugyba( skaicius3, skaicius2 ) );
 console.log( daugyba( skaicius1, skaicius3 ) );
+
+console.clear(
+
+)
+
+
+const day = 1
+if (day == 1) {
+
+    console.log(`Pirmadienis`);
+
+}else {
+
+    console.log(`Nezinau`);
+
+}
+const day1 = 6;
+
+let weekday = 'Nezinau..';
+
+
+if (day1 == 1) {
+
+    weekday1 = 'Pirmadienis';
+
+} else if (day1 == 2) {
+
+    weekday1 = 'Antradienis'
+
+} else if (day1 == 3) {
+
+    weekday1 = 'Treciadienis';
+
+} else if (day1 == 4) {
+
+    weekday1 = 'Ketvirtadienis';
+
+} else if (day1 == 5) {
+
+    weekday1 = 'Penktadienis';
+
+} else if (day1 == 6) {
+
+    weekday1 = 'Sestadienis';
+
+} else {
+
+    weekday1 = 'Sekmadienis';
+
+}
+console.log(weekday1);
+
