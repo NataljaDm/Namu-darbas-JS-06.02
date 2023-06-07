@@ -68,6 +68,48 @@ Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 viene
 Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
 Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.*/
 
+let pirmasSkaicius = 0;
+ let paskutinisSkaicius = 11;
+
+ let skaicius1 = 3;
+ let skaicius2 = 5;
+ let skaicius3 = 7;
+ let beLiekanos = 0;
+
+ let rezultatas1 = (pirmasSkaicius, paskutinisSkaicius, skaicius1) => {
+     for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
+         if(i % skaicius1 === 0){
+             beLiekanos++;
+        }
+     }
+     return `Skaičių intervale tarp ${pirmasSkaicius} ir ${paskutinisSkaicius}, besidalijančių be liekanos iš ${skaicius1} yra ${beLiekanos} vienetai.`;
+ }
+
+ console.log(rezultatas1(pirmasSkaicius, paskutinisSkaicius, skaicius1));
+
+ let rezultatas2 = (pirmasSkaicius, paskutinisSkaicius, skaicius1) => {
+    for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
+        if(i % skaicius2 === 0){
+            beLiekanos++;
+       }
+    }
+    return `Skaičių intervale tarp ${pirmasSkaicius} ir ${paskutinisSkaicius}, besidalijančių be liekanos iš ${skaicius2} yra ${beLiekanos} vienetai.`;
+}
+
+console.log(rezultatas2(pirmasSkaicius, paskutinisSkaicius, skaicius2));
+
+let rezultatas3 = (pirmasSkaicius, paskutinisSkaicius, skaicius3) => {
+    for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
+        if(i % skaicius3 === 0){
+            beLiekanos++;
+       }
+    }
+    return `Skaičių intervale tarp ${pirmasSkaicius} ir ${paskutinisSkaicius}, besidalijančių be liekanos iš ${skaicius3} yra ${beLiekanos} vienetai.`;
+}
+
+console.log(rezultatas3(pirmasSkaicius, paskutinisSkaicius, skaicius3));
+
+
 
 
 /*
