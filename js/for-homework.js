@@ -11,39 +11,39 @@
 let sum =0
 for (let i = 0; i < 0; i++) {
     sum += i
-    console.log(sum);
+    /*console.log(sum)*/;
 }
 console.log(sum);
 
 let sum2 =0
 for (let i = 0; i <= 4; i++) {
     sum2 += i
-    console.log(sum2);
+   /* console.log(sum2)*/;
 }
 console.log(sum2);
 
 let sum3 =0
 for (let i = 0; i <= 100; i++) {
     sum3 += i
-    console.log(sum3);
+    /*console.log(sum3)*/;
 }
 console.log(sum3);
 let sum4 =0
 for (let i = 574; i <= 815; i++) {
     sum4 += i
-    console.log(sum4);
+    /*console.log(sum4)*/;
 }
 console.log(sum4);
 
 for (let i = -50; i <= 50; i++) {
     sum += i
-    console.log(sum);
+    /*console.log(sum)*/;
 }
 console.log(sum);
 
 for (let i = -70; i <= 30; i++) {
     sum += i
-    console.log(sum);}
+    /*console.log(sum);*/}
 
 console.log(sum);
 
@@ -74,9 +74,10 @@ let pirmasSkaicius = 0;
  let skaicius1 = 3;
  let skaicius2 = 5;
  let skaicius3 = 7;
- let beLiekanos = 0;
+ ;
 
  let rezultatas1 = (pirmasSkaicius, paskutinisSkaicius, skaicius1) => {
+    let beLiekanos = 0
      for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
          if(i % skaicius1 === 0){
              beLiekanos++;
@@ -87,7 +88,8 @@ let pirmasSkaicius = 0;
 
  console.log(rezultatas1(pirmasSkaicius, paskutinisSkaicius, skaicius1));
 
- let rezultatas2 = (pirmasSkaicius, paskutinisSkaicius, skaicius1) => {
+ let rezultatas2 = (pirmasSkaicius, paskutinisSkaicius, skaicius2) => {
+    let beLiekanos = 0
     for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
         if(i % skaicius2 === 0){
             beLiekanos++;
@@ -99,6 +101,7 @@ let pirmasSkaicius = 0;
 console.log(rezultatas2(pirmasSkaicius, paskutinisSkaicius, skaicius2));
 
 let rezultatas3 = (pirmasSkaicius, paskutinisSkaicius, skaicius3) => {
+    let beLiekanos = 0
     for(let i = pirmasSkaicius; i <= paskutinisSkaicius; i++){
         if(i % skaicius3 === 0){
             beLiekanos++;
@@ -108,8 +111,6 @@ let rezultatas3 = (pirmasSkaicius, paskutinisSkaicius, skaicius3) => {
 }
 
 console.log(rezultatas3(pirmasSkaicius, paskutinisSkaicius, skaicius3));
-
-
 
 
 /*
@@ -192,4 +193,6 @@ else if (masyvas4[i] === 5){
  console.log(`m3:3=`, r);
  console.log(`m3:4=`, t);
  console.log(`m3:5=`, y);
+
+ 
   
