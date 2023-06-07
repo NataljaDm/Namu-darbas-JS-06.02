@@ -98,12 +98,9 @@ for (let i = 0; i < masyvas2.length; i++) {
    if(masyvas2[i] === 1){
     x++; } 
 else if (masyvas2[i] === 2) {
-du++;   
-} 
+    du++;  } 
 else if (masyvas2[i] === 3) {
-    tris++;   
-    } 
-}
+    tris++;  } }
  console.log(`m2:1=`, x);
  console.log(`m2:2=`, du);
  console.log(`m2:3=`, tris);
@@ -117,18 +114,14 @@ let e = 0;
 for (let i = 0; i < masyvas3.length; i++) {
     if(masyvas3[i] === 1){
      a++; } 
- else if (masyvas3[i] === 2) {
- b++;   
- } 
- else if (masyvas3[i] === 3) {
-     c++;   
-     } 
-     else if (masyvas3[i] === 4) {
-        d++;   
-        } 
-        else if (masyvas3[i] === 5) {
-            e++;   
-            } }
+else if (masyvas3[i] === 2) {
+ b++; } 
+else if (masyvas3[i] === 3) {
+     c++; } 
+else if (masyvas3[i] === 4) {
+     d++; } 
+else if (masyvas3[i] === 5) {
+    e++;  } }
  console.log(`m3:1=`, a);
  console.log(`m3:2=`, b);
  console.log(`m3:3=`, c);
@@ -144,13 +137,13 @@ let y = 0;
 for (let i = 0; i < masyvas4.length; i++) {
     if(masyvas4[i] === 1){
      q++; } 
- else if (masyvas4[i] === 2){
- w++; } 
- else if (masyvas4[i] === 3){
-     r++; } 
+else if (masyvas4[i] === 2){
+      w++; } 
+else if (masyvas4[i] === 3){
+      r++; } 
 else if (masyvas4[i] === 4){
-        t++; } 
- else if (masyvas4[i] === 5){
+     t++; } 
+else if (masyvas4[i] === 5){
             y++; } }
  console.log(`m3:1=`, q);
  console.log(`m3:2=`, w);
