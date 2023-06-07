@@ -8,7 +8,7 @@
 -50 … 50
 -70 … 30*/
 
-/*let sum =0
+let sum =0
 for (let i = 0; i < 0; i++) {
     sum += i
     console.log(sum);
@@ -43,9 +43,11 @@ console.log(sum);
 
 for (let i = -70; i <= 30; i++) {
     sum += i
-    console.log(sum);
+    console.log(sum);}
 
 console.log(sum);
+
+
 
 
 /*2.panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
