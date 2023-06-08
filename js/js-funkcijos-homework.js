@@ -29,11 +29,11 @@ console.log(`---------2--------`);
 
 function daugyba(a, b) {
     if (typeof a !== 'number' || !isFinite(a)) {
-        return 'teisingos reikšmės';
+        return 'neteisingos reikšmės';
     }
 
     if (typeof b !== 'number' || !isFinite(b)) {
-        return 'teisingos reikšmės.';
+        return 'neteisingos reikšmės.';
     }
 
     const c = a * b;
@@ -43,6 +43,7 @@ function daugyba(a, b) {
 console.log(daugyba(5, 9));
 console.log(daugyba(`skaicius3`, 9));
 console.log(daugyba(5, `skaicius3`));
+console.log(daugyba(45, 7));
 
 
 /* 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
