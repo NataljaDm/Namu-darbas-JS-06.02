@@ -8,6 +8,7 @@ gražina boolean tipo reikšmę “false”
 TESTAS:
 console.log( tusciaFunkcija() );
 rezultatas: false*/
+console.log(`------1-------`);
 function tusciaFunkcija() {
     return false
 }
@@ -24,7 +25,7 @@ console.log( daugyba( skaicius1, skaicius3 ) );
 rezultatas: teisingos reikšmės;*/
 
 
-
+console.log(`---------2--------`);
 
 function daugyba(a, b) {
     if (typeof a !== 'number' || !isFinite(a)) {
@@ -40,8 +41,9 @@ function daugyba(a, b) {
 }
 
 console.log(daugyba(5, 9));
-console.log(daugyba(45, 9));
-console.log(daugyba(5, 45));
+console.log(daugyba(`skaicius3`, 9));
+console.log(daugyba(5, `skaicius3`));
+
 
 /* 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
 priima vieną kintamąjį
@@ -62,6 +64,21 @@ console.log( skaitmenuKiekisSkaiciuje( “asd” ) );
 rezultatas: “Pateikta netinkamo tipo reikšmė.”
 console.log( skaitmenuKiekisSkaiciuje( NaN ) );
 rezultatas: “Pateikta netinkamo tipo reikšmė.”*/
+console.log(`-----------3----------`);
+function skaitmenuKiekisSkaiciuje(a) {
+   
+    if (typeof a !== 'number' || !isFinite(a)) {
+        return 'Pateikta netinkamo tipo reikšmė';
+    }
+    let rez = a.length;
+    return rez;
+}
+console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+console.log( skaitmenuKiekisSkaiciuje( true ) );
+console.log( skaitmenuKiekisSkaiciuje( `asd` ));
+console.log( skaitmenuKiekisSkaiciuje( NaN ) );
 
 
 /* 4.Funkcija pavadinimu “didziausiasSkaiciusSarase”:
@@ -86,8 +103,21 @@ console.log( didziausiasSkaiciusSarase( “pomidoras” ) );
 rezultatas: “Pateikta netinkamo tipo reikšmė.”
 console.log( didziausiasSkaiciusSarase( [] ) );
 rezultatas: “Pateiktas sąrašas negali būti tuščias.”*/
-
-
+console.log(`---------4---------`);
+function didziausiasSkaiciusSarase(b) {
+   
+    if (typeof b !== 'number' || !isFinite(b)) {
+        return 'Pateikta netinkamo tipo reikšmė';
+    }
+    let rez = b;
+    return rez;
+}
+console.log( didziausiasSkaiciusSarase( [ 1 ] ) );
+console.log( didziausiasSkaiciusSarase( [ 1, 2, 3 ] ) );
+console.log( didziausiasSkaiciusSarase( [ -5, 78, 14, 0, 18 ] ) );
+console.log( didziausiasSkaiciusSarase( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ) );
+console.log( didziausiasSkaiciusSarase( `pomidoras` ) );
+console.log( didziausiasSkaiciusSarase( [] ) );
 
 /* 5. Funkcija pavadinimu “isrinktiRaides”:
 priima du kintamuosius:
@@ -136,23 +166,25 @@ grąžinti suskaičiuotą reikšmę
 TESTAI:
 sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą*/
 
-function dalyba(a, b) {
-    if (typeof a !== 'number' || !isFinite(a)) {
+function dalyba(q, w) {
+    if (typeof q !== 'number' || !isFinite(q)) {
         return 'ERROR: pirmas parametras privalo buti normalus skaicius.';
     }
 
-    if (typeof b !== 'number' || !isFinite(b)) {
+    if (typeof w !== 'number' || !isFinite(w)) {
         return 'ERROR: antras parametras privalo buti normalus skaicius.';
     }
 
-    const rez = a / b;
+    const rez = q / w;
     return rez;
 }
 
 console.log('------------');
+console.log(`------6--------`)
 console.log(dalyba(45, 5));
 console.log(dalyba(`tekstas`, 5));
 console.log(dalyba(false, 9));
+console.log(dalyba(100, 10));
 console.log(dalyba(40, NaN));
 console.log(dalyba(-63, true));
 console.log(dalyba(72, 9));
