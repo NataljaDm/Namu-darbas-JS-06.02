@@ -65,21 +65,45 @@ console.log( skaitmenuKiekisSkaiciuje( “asd” ) );
 rezultatas: “Pateikta netinkamo tipo reikšmė.”
 console.log( skaitmenuKiekisSkaiciuje( NaN ) );
 rezultatas: “Pateikta netinkamo tipo reikšmė.”*/
+
 console.log(`-----------3----------`);
+
 function skaitmenuKiekisSkaiciuje(a) {
    
     if (typeof a !== 'number' || !isFinite(a)) {
         return 'Pateikta netinkamo tipo reikšmė';
     }
-    let rez = a.length;
-    return rez;
+    let rez = (`` + a);
+    return rez.length;
 }
 console.log( skaitmenuKiekisSkaiciuje( 5 ) );
 console.log( skaitmenuKiekisSkaiciuje( 781 ) );
 console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+console.log('--------------------------------');
 console.log( skaitmenuKiekisSkaiciuje( true ) );
 console.log( skaitmenuKiekisSkaiciuje( `asd` ));
 console.log( skaitmenuKiekisSkaiciuje( NaN ) );
+console.log( skaitmenuKiekisSkaiciuje(true));
+console.log( skaitmenuKiekisSkaiciuje(false));
+console.log( skaitmenuKiekisSkaiciuje('asd'));
+console.log( skaitmenuKiekisSkaiciuje(NaN));
+console.log( skaitmenuKiekisSkaiciuje(Infinity));
+console.log( skaitmenuKiekisSkaiciuje(-Infinity));
+console.log( skaitmenuKiekisSkaiciuje(undefined));
+console.log( skaitmenuKiekisSkaiciuje());
+console.log( skaitmenuKiekisSkaiciuje([]));
+console.log( skaitmenuKiekisSkaiciuje(skaitmenuKiekisSkaiciuje));
+console.log('--------------------------------');
+console.log( skaitmenuKiekisSkaiciuje(5), '->', 1);
+console.log( skaitmenuKiekisSkaiciuje(781), '->', 3);
+console.log( skaitmenuKiekisSkaiciuje(37060123456), '->', 11);
+console.log( skaitmenuKiekisSkaiciuje(-5), '->', 1);
+console.log( skaitmenuKiekisSkaiciuje(-781), '->', 3);
+console.log( skaitmenuKiekisSkaiciuje(-37060123456), '->', 11);
+console.log( skaitmenuKiekisSkaiciuje(3.14), '->', 3);
+console.log( skaitmenuKiekisSkaiciuje(2.727), '->', 4);
+console.log( skaitmenuKiekisSkaiciuje(-3.14), '->', 3);
+console.log( skaitmenuKiekisSkaiciuje(-2.727), '->', 4);
 
 
 /* 4.Funkcija pavadinimu “didziausiasSkaiciusSarase”:
@@ -180,7 +204,7 @@ function dalyba(q, w) {
     return rez;
 }
 
-console.log('------------');
+
 console.log(`------6--------`)
 console.log(dalyba(45, 5));
 console.log(dalyba(`tekstas`, 5));
