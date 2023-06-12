@@ -250,7 +250,7 @@ function isrinktiRaides(s, d) {
     if (typeof s !== 'string') {
         return `Pirmasis kintamasis yra netinkamo tipo.`
     } 
-    if (s.length === 0 || s.length >= 1000) {
+    if (s.length === 0 || s.length >= 100) {
         return `Pirmojo kintamojo reikšmė yra netinkamo dydžio.`
     }
     if (typeof d !== 'number' || !isFinite(d)) {
