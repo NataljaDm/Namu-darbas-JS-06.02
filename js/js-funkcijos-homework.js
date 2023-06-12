@@ -267,18 +267,43 @@ function dalyba(q, w) {
         return 'ERROR: antras parametras privalo buti normalus skaicius.';
     }
 
-    const rez = q / w;
-    return rez;
+    const rez1 = q / w;
+    return rez1;
 }
 
 
 console.log(`------6--------`)
 console.log(dalyba(45, 5));
+console.log(dalyba(-45, 5));
 console.log(dalyba(`tekstas`, 5));
 console.log(dalyba(false, 9));
 console.log(dalyba(100, 10));
 console.log(dalyba(40, NaN));
 console.log(dalyba(-63, true));
-console.log(dalyba(72, 9));
+console.log(dalyba(72, -9));
+console.log(dalyba(5, 9));
+console.log(dalyba(`skaicius3`, -9));
+console.log(dalyba(5, `skaicius3`));
+console.log(dalyba(45, 7));
+console.log(dalyba('labas', 2));
+console.log(dalyba('5', 2));
+console.log(dalyba([], 2));
+console.log(dalyba(true, 2));
+console.log(dalyba(false, 2));
+console.log(dalyba(dalyba, 2));
+console.log(dalyba(undefined, 2));
+console.log(dalyba(7, 'labas'));
+console.log(dalyba(7, '5'));
+console.log(dalyba(7, []));
+console.log(dalyba(7, true));
+console.log(dalyba(7, false));
+console.log(dalyba(7, dalyba));
+console.log(dalyba(7, undefined));
+console.log(dalyba(NaN, 2));
+console.log(dalyba(Infinity, 2));
+console.log(dalyba(-Infinity, 2));
+console.log(dalyba(7, NaN));
+console.log(dalyba(7, Infinity));
+console.log(dalyba(7, -Infinity));
 
 
