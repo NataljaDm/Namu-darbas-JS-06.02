@@ -250,7 +250,7 @@ function isrinktiRaides(s, d) {
     if (typeof s !== 'string') {
         return `Pirmasis kintamasis yra netinkamo tipo.`
     } 
-    if (s.length === 0 || a.length >= 50) {
+    if (s.length === 0 || s.length >= 1000) {
         return `Pirmojo kintamojo reikšmė yra netinkamo dydžio.`
     }
     if (typeof d !== 'number' || !isFinite(d)) {
@@ -259,7 +259,7 @@ function isrinktiRaides(s, d) {
     if (d <= 0) {
         return `Antrasis kintamasis turi būti didesnis už nulį.`
     }
-    if (d > a.length) {
+    if (d > s.length) {
         return `Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.`
     }
     const dAsString = '' + d;
@@ -267,12 +267,44 @@ function isrinktiRaides(s, d) {
         return `Antrasis kintamasis turi būti sveikas skaicius.`
     }
     let naujasString = '';
-    for (let i = 0; i < a.length; i += b) {
+    for (let i = 0; i < s.length; i += d) {
         naujasString += s[i];
         }
         return naujasString;
 
 }
+
+console.log(isrinktiRaides('zodis',2));
+console.log(isrinktiRaides('zodis',9));
+console.log(isrinktiRaides('zodissssss',3));
+console.log(isrinktiRaides(`zodissbifhvbkdfb`, 5));
+console.log(isrinktiRaides(`zodissbifhvbkdfbnynn`, 9));
+console.log(isrinktiRaides(`zodissbifhvbkdfbnynn`, -9));
+console.log(isrinktiRaides(`zodissbifhvbkdfbnynn`, 0));
+console.log(isrinktiRaides(`zodissbifhvbkdfbnynn`, null));
+console.log(isrinktiRaides(21315,2));
+console.log(isrinktiRaides(21315,'zodis'));
+console.log(isrinktiRaides(true, 'zodis'));
+console.log(isrinktiRaides(true, 2));
+console.log(isrinktiRaides({}, false));
+console.log(isrinktiRaides([], false))
+console.log(isrinktiRaides(true, []));
+console.log(isrinktiRaides([], `zodis`));
+console.log(isrinktiRaides(564, false));
+console.log(isrinktiRaides());
+console.log(isrinktiRaides(undefined, null));
+console.log(isrinktiRaides('zodis', 0.5));
+console.log(isrinktiRaides([20, 12365, 98, 987, 6547], 258796));
+console.log(isrinktiRaides('kebas', [-20, -12365, -98, 987, 654, -258796]));
+console.log(isrinktiRaides(['rytas', 'diena', `vakaras`], Infinity));
+console.log(isrinktiRaides({}));
+console.log(isrinktiRaides(Infinity, 5));
+console.log(isrinktiRaides(-Infinity, 1));
+console.log(isrinktiRaides('zodis', NaN));
+console.log(isrinktiRaides(null, 5));
+console.log(isrinktiRaides(0, 'zodis'));
+console.log(isrinktiRaides(15354, null ));
+
 
 
 
@@ -289,11 +321,11 @@ sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos ve
 
 function dalyba(q, w) {
     if (typeof q !== 'number' || !isFinite(q)) {
-        return 'ERROR: pirmas parametras privalo buti normalus skaicius.';
+        return 'pirmas parametras privalo buti normalus skaicius.';
     }
 
     if (typeof w !== 'number' || !isFinite(w)) {
-        return 'ERROR: antras parametras privalo buti normalus skaicius.';
+        return 'antras parametras privalo buti normalus skaicius.';
     }
 
     const rez1 = q / w;
@@ -334,5 +366,4 @@ console.log(dalyba(-Infinity, 2));
 console.log(dalyba(7, NaN));
 console.log(dalyba(7, Infinity));
 console.log(dalyba(7, -Infinity));
-
 
