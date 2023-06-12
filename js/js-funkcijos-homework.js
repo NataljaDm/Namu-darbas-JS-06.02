@@ -36,14 +36,34 @@ function daugyba(a, b) {
         return 'neteisingos reikšmės.';
     }
 
-    const c = a * b;
-    return c;
+    const ats = a * b;
+    return ats;
 }
 
 console.log(daugyba(5, 9));
 console.log(daugyba(`skaicius3`, 9));
 console.log(daugyba(5, `skaicius3`));
 console.log(daugyba(45, 7));
+console.log(daugyba('labas', 2));
+console.log(daugyba('5', 2));
+console.log(daugyba([], 2));
+console.log(daugyba(true, 2));
+console.log(daugyba(false, 2));
+console.log(daugyba(daugyba, 2));
+console.log(daugyba(undefined, 2));
+console.log(daugyba(7, 'labas'));
+console.log(daugyba(7, '5'));
+console.log(daugyba(7, []));
+console.log(daugyba(7, true));
+console.log(daugyba(7, false));
+console.log(daugyba(7, daugyba));
+console.log(daugyba(7, undefined));
+console.log(daugyba(NaN, 2));
+console.log(daugyba(Infinity, 2));
+console.log(daugyba(-Infinity, 2));
+console.log(daugyba(7, NaN));
+console.log(daugyba(7, Infinity));
+console.log(daugyba(7, -Infinity));
 
 
 /* 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
