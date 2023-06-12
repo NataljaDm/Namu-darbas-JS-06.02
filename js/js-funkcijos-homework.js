@@ -245,6 +245,35 @@ rezultatas: “Antrasis kintamasis turi būti ne didesnis už pateikto teksto il
 console.log( isrinktiRaides( 1561, 2 ) );
 rezultatas: “Pirmasis kintamasis yra netinkamo tipo.”*/
 
+console.log(`-------------5------------`);
+function isrinktiRaides(s, d) {
+    if (typeof s !== 'string') {
+        return `Pirmasis kintamasis yra netinkamo tipo.`
+    } 
+    if (s.length === 0 || a.length >= 50) {
+        return `Pirmojo kintamojo reikšmė yra netinkamo dydžio.`
+    }
+    if (typeof d !== 'number' || !isFinite(d)) {
+        return `Antrasis kintomasis yra netinkamo tipo.`
+    }
+    if (d <= 0) {
+        return `Antrasis kintamasis turi būti didesnis už nulį.`
+    }
+    if (d > a.length) {
+        return `Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.`
+    }
+    const dAsString = '' + d;
+    if (d.toFixed(0) !== dAsString) {
+        return `Antrasis kintamasis turi būti sveikas skaicius.`
+    }
+    let naujasString = '';
+    for (let i = 0; i < a.length; i += b) {
+        naujasString += s[i];
+        }
+        return naujasString;
+
+}
+
 
 
 /* 6. Funkcija pavadinimu “dalyba”:
